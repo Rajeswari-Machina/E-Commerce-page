@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+.fira-sans-light {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  right:0;
+  z-index: 1000;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 10%;
+  }
+.logo img{
+    max-width:120px;
+    height:auto;
+}
+.navmenu{
+    display:flex;
+    align-items:center;
+    
+}
+ul{
+    list-style: none;
+}
+.navmenu a{
+    color:black;
+    font-size:16px;
+    text-transform:capitalize;
+    padding:20px 10px;
+    font-weight:400;
+    transition:all .42s ease;
+   
+}
+.navmenu a:hover{
+    color:deeppink;
+}
+.nav-icon{
+    display:flex;
+    align-items:center;
+}
+.nav-icon i{
+    margin-right:20px ;
+    color:black;
+    font-size:25px;
+    font-weight:400;
+    transition:all .42s ease;
+}
+.nav-icon i:hover{
+    transform:scale(1.1);
+    color:deeppink;
+
+}
+section{
+    padding:5% 10%;
+
+}
+.main-home{
+    width :100%;
+    height:100vh;
+    background-image:url(image/homebg1-removebg-preview.png);
+    background-position:70%;
+    background-size:40%;
+    background-color: rgb(245, 148, 197);
+    background-repeat: no-repeat;
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    align-items: center;
+
+}
+.main-text h5{
+    color:deeppink;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight:500;
+}
+.main-text h1{
+    color:black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight:700;
+    margin: 6px 0 10 px;
+}
+.main-text p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color:bisque;
+}
+.main-btn{
+    display:inline-block;
+    color:black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border:2px solid black;
+    padding:12px 25px;
+    transition:all .42s ease;
+}
+.main-btn:hover{
+    background-color: black;
+    color:white;
+}
+/* trending section css*/
+.center-text h2{
+    color:black;
+    font-size:28px;
+    text-transform: capitalize;
+    text-align:center;
+    margin-bottom: 30px;
+}
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto) );
+    gap:2rem;
+}
+.row{
+    position:relative;
+    transition: all .40s;
+}
+.row img{
+    width:100%;
+    height:auto;
+    transition: all .40s;
+
+}
+.row img:hover{
+    transform:scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top:13px;
+    left:13px;
+    color:lightgreen;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform:uppercase;
+    padding:3px 10 px;
+    border-radius:2px;
+}
+.heart-icon{
+    position:absolute;
+    right:0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color:deeppink;
+}
+.rating i{
+    color:gold;
+    font-size:18px;
+}
+.price h4{
+    color:grey;
+    font-size:14px;
+    text-transform:capitalize;
+}
